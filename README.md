@@ -1,2 +1,2 @@
 # GS-Store
-Small price manger for my business
+Small price manager for my business
