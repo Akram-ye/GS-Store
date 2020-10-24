@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - GS, Store</title>
+    <link rel="shortcut icon" href="img/GS.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body dir="rtl" class="bg-gradient-to-r from-teal-400 to-blue-500">
+    <div class="mt-10 text-white">
+        <p class="font-bold text-center text-3xl sm:text-4xl">تفاصيل المنتج</p>
+    </div>
+    <div class="container min-h-64 w-5/6 sm:w-4/6 bg-white my-10 p-3 pb-10 rounded-lg shadow-lg">
+        <nav class="mx-auto mt-5 w-2/4 font-bold">
+            <ul class="flex items-center justify-between sm:justify-around text-sm sm:text-xl">
+                <li><a href="index.html" class="text-blue-300 hover:text-blue-500">بحث</a></li>
+                <li><a href="addproduct.html" class="text-blue-300 hover:text-blue-500"> إضافة</a></li>
+            </ul>
+        </nav>
+
+        <div
+            class="shadow relative flex flex-col-reverse md:flex-row justify-between mx-auto w-full sm:w-9/12 md:w-9/12 lg:w-5/6 h-50 mt-6 py-5 px-3 min-h-full bg-teal-100 rounded">
+
+
+            <div
+                class="shadow-lg absolute w-12 sm:w-32 sm:h-10 left-0 top-0 mt-3 ml-3 sm:-mt-5 sm:-ml-10 sm:px-5 flex flex-col sm:flex-row justify-between bg-gradient-to-r from-blue-00 to-teal-500  rounded-full">
+                <button id="delete-product-button"
+                    class="focus:outline-none p-2 sm:ml-1 sm:p-0 text-center text-white hover:text-blue-500"><img
+                        src="img/delete.png" alt="delete" class="sm:w-4/6 mx-auto"></button>
+                <button id="edit-product-button"
+                    class="focus:outline-none p-2 ml-1 sm:p-0 text-white sm:mr-1 hover:text-blue-500"><img
+                        src="img/edit.png" alt="edit" class="sm:w-4/6 mx-auto"></button>
+            </div>
+
+            <div class=" w-full md:w-4/6 text-right">
+                <h2 id="show_product_number"
+                    class="shadow bg-white p-2 m-2 rounded font-bold text-blue-500 text-xl mb-5 text-center">
+                </h2>
+                <p id="show_product_name" class="shadow bg-white p-2 m-2 rounded text-blue-500 text-xl"></p>
+                <h2 id="show_product_date" class="shadow bg-white p-2 m-2 rounded text-blue-500 text-xl mb-5"></h2>
+                <p id="show_product_decsription"
+                    class="shadow bg-white p-2 m-2 rounded h-32 overflow-x-auto text-right text-blue-500 scrollbar-thumb:bg-red-500 scrollbar-track:rounded">
+
+                </p>
+            </div>
+            <div class="shadow bg-white  m-2 w-full md:w-3/6 mx-auto sm:h-auto h-40 text-blue-500  text-center ">
+                <h1 id="show_product_price"
+                    class=" p-5 m-2 rounded font-bold text-6xl sm:text-5xl md:text-6xl lg:text-7xl">
+                </h1>
+                <h4 class="-mt-10 font-bold text-xl">ريال</h4>
+            </div>
+
+        </div>
+
+
+        <div class="message-out mb-3 w-full">
+        </div>
+    </div>
+
+
+    <script defer src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+
+    <script defer src="js/showProduct.js"></script>
+</body>
+
+
+
+
+
+</html>

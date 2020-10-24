@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Prodect - GS, Store</title>
+    <link rel="shortcut icon" href="img/GS.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body dir="rtl" class="bg-gradient-to-r from-teal-400 to-blue-500">
+
+    <div class="mt-10 text-white">
+        <p class="font-bold text-center text-3xl sm:text-4xl">إضافة منتج</p>
+    </div>
+
+    <div class="container min-h-64 w-5/6 sm:w-4/6 bg-white my-10 p-3 pb-10 rounded-lg shadow-lg">
+
+        <nav class="mx-auto mt-5 w-2/4 font-bold">
+            <ul class="flex items-center justify-between sm:justify-around text-sm sm:text-xl">
+                <li><a href="index.html" class="text-blue-300 hover:text-blue-500">بحث</a></li>
+                <li><a href="addproduct.html" class="text-blue-300 hover:text-blue-500"> إضافة</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="mx-auto w-full sm:w-10/12 h-50 mt-6 py-10 px-3 min-h-full bg-teal-100 rounded">
+            <div class="message-out mb-3 w-full"></div>
+
+            <div>
+                <form action="" id="prodcut-add-form" class="flex flex-col sm:flex-row flex-wrap justify-center">
+
+
+                    <input autofocus minlength="13" maxlength="13" type="text" onkeypress="return onlyNumberKey(event)"
+                        name="product-number" id="add-product-number" placeholder="(مطلوب) رقم المنتج"
+                        class="w-full sm:w-3/6 h-10 sm:m-2 my-2 p-3 outline-none rounded-lg border-2 border-teal-300 focus:border-blue-500"
+                        autocomplete="off">
+
+
+                    <input type="text" maxlength="5" onkeypress="return onlyNumberKey(event)" name="product-price"
+                        id="add-product-price" placeholder="(مطلوب) السعر"
+                        class="w-full sm:w-2/6 h-10 sm:m-2 my-2 p-3 outline-none rounded-lg border-2 border-teal-300 focus:border-blue-500"
+                        autocomplete="off">
+
+                    <input type="text" name="product-name" id="add-product-name" placeholder="(مطلوب) اسم المنتج"
+                        class="w-full sm:w-3/6 h-10 sm:m-2 my-2 p-3 outline-none rounded-lg border-2 border-teal-300 focus:border-blue-500"
+                        autocomplete="off">
+
+                    <input type="date" name="product-date" id="add-product-date" placeholder="التاريخ"
+                        class="w-full sm:w-2/6 h-10 sm:m-2 my-2 p-3 outline-none rounded-lg border-2 border-teal-300 focus:border-blue-500"
+                        autocomplete="off">
+                    <textarea name="description" id="add-product-description" placeholder="ملاحظات"
+                        class="w-full sm:w-5/6 h-24 sm:h-48 sm:m-2 my-2 p-3  outline-none rounded-lg border-2 border-teal-300 focus:border-blue-500"
+                        autocomplete="off"></textarea>
+
+
+                    <button type="submit"
+                        class="w-full sm:w-3/6 h-12 text-white text-2xl font-bold sm:m-3 my-3 bg-gradient-to-l from-teal-400 to-blue-500 rounded-lg">إضافة</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script defer src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+
+    <script defer src="js/addProduct.js"></script>
+</body>
+
+</html>
