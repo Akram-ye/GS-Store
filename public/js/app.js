@@ -19,7 +19,7 @@ const messageOut = document.querySelector('.message-out')
 
 searchForm.addEventListener('submit', e => {
     e.preventDefault()
-    const productNumber = Number(searchForm['product-number'].value)
+    const productNumber = searchForm['product-number'].value
 
     if (productNumber == '') {
         msgError('يرجى إدخال رقم المنتج!')

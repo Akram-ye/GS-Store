@@ -15,7 +15,7 @@ firebase.initializeApp(firebaseConfig)
 const db = firebase.firestore()
 
 const editProductForm = document.querySelector('#edit-product-form')
-const productNumber = Number(localStorage.getItem('product_no'))
+const productNumber = localStorage.getItem('product_no')
 const showProductNumber = document.querySelector('#edit-product-number')
 
 const messageOut = document.querySelector('.message-out')

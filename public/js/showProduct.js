@@ -15,7 +15,7 @@ const editProductButton = document.querySelector('#edit-product-button')
 const deleteProductButton = document.querySelector('#delete-product-button')
 const messageOut = document.querySelector('.message-out')
 
-const productNumber = Number(localStorage.getItem('product_no'))
+const productNumber = localStorage.getItem('product_no')
 
 const productsRef = db
     .collection('products')
