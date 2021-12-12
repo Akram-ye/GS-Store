@@ -20,8 +20,8 @@ const messageOut = document.querySelector('.message-out')
 addProdcutForm.addEventListener('submit', e => {
     e.preventDefault()
 
-    const productNumber = addProdcutForm['add-product-number'].value
     const productPrice = Number(addProdcutForm['add-product-price'].value)
+    const productNumber = addProdcutForm['add-product-number'].value
     const productName = addProdcutForm['add-product-name'].value
     const productDate = addProdcutForm['add-product-date'].value
     const productDescription = addProdcutForm['add-product-description'].value
